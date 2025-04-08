@@ -109,6 +109,7 @@ jobs:
                     -DBUILD_WITHOUT_LAPACK=0 \
                     -DCMAKE_VERBOSE_MAKEFILE=ON \
                     -DCMAKE_BUILD_TYPE=Release \
+                    -DINTERFACE64=1 \
                     -DCMAKE_Fortran_COMPILER=${{ matrix.fortran }} \
                     -DCMAKE_C_COMPILER_LAUNCHER=ccache \
                     -DCMAKE_Fortran_COMPILER_LAUNCHER=ccache \
